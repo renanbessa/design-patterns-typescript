@@ -1,6 +1,6 @@
 import { MealBuilderProtocol } from '../interfaces/meal-builder-protocol';
 import { MealBox } from './meal-box';
-import { Rice, Beans } from './meals';
+import { Beans, Rice } from './meals';
 
 export class VeganDishBuilder implements MealBuilderProtocol {
   private _meal: MealBox = new MealBox();

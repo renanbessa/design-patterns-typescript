@@ -12,5 +12,4 @@ console.log(meal2);
 
 const veganDishBuilder = new VeganDishBuilder();
 const veganMeal = veganDishBuilder.makeMeal().getMeal();
-console.log(veganMeal);
 console.log(veganMeal.getPrice());

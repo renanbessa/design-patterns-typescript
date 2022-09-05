@@ -1,6 +1,6 @@
 import { MealBuilderProtocol } from '../interfaces/meal-builder-protocol';
 import { MealBox } from './meal-box';
-import { Rice, Beans, Meat, Beverage, Dessert } from './meals';
+import { Beans, Beverage, Dessert, Meat, Rice } from './meals';
 
 export class MainDishBuilder implements MealBuilderProtocol {
   private _meal: MealBox = new MealBox();
@@ -17,13 +17,11 @@ export class MainDishBuilder implements MealBuilderProtocol {
     this._meal.add(rice, beans, meat);
     return this;
   }
-
   makeBeverage(): this {
     const beverage = new Beverage('Bebida', 7);
     this._meal.add(beverage);
     return this;
   }
-
   makeDessert(): this {
     const dessert = new Dessert('Sobremesa', 10);
     this._meal.add(dessert);
