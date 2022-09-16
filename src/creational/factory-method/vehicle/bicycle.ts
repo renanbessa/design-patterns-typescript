@@ -6,7 +6,6 @@ export class Bicycle implements Vehicle {
   pickUp(customerName: string): void {
     console.log(`${this.name} está buscando ${customerName}`);
   }
-
   stop(): void {
     console.log(`${this.name} parou`);
   }

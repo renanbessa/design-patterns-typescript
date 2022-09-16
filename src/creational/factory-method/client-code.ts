@@ -1,6 +1,6 @@
+import { CarFactory } from './factories/car-factory';
 import { randomCarAlgorithm } from './main/random-vehicle-algorithm';
 import { randomNumbers } from './utils/random-numbers';
-import { CarFactory } from './factories/car-factory';
 
 const carFactory = new CarFactory();
 const customerNames = ['Ana', 'Joana', 'Helena', 'João'];
